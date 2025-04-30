@@ -7,7 +7,7 @@
 		".svelte-kit/cloudflare"
 	],
 	"scripts": {
-		"prepare": "husky install && tsup src/cfai.ts -d cfai --format esm --minify",
+		"prepare": "husky install",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
