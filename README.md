@@ -48,7 +48,7 @@ OpenAI API:
 
 - `OPENAI_API_KEY`: OpenAI API key for Semantic Query.
 - `OPENAI_API_URL`: You may use this with Cloudflare AI Gateway to proxy requests to OpenAI API.
-- `OPENAI_MODEL`: OpenAI API model for Semantic Query. Default to `gpt-3.5-turbo-1106`.
+- `OPENAI_MODEL`: OpenAI API model for Semantic Query. Default to `gpt-4.1-mini`.
 
 Cloudflare AI Worker:
 
@@ -67,4 +67,4 @@ Cloudflare AI Worker:
 
 ![semantic-query](./images/semantic-query.png)
 
-> Semantic Query uses OpenAI GPT-3.5 Turbo to translate natural language queries into SQL.
+> Semantic Query uses OpenAI GPT-4.1 Mini to translate natural language queries into SQL.
