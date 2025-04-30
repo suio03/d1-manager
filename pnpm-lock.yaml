@@ -14,9 +14,6 @@ devDependencies:
     "@changesets/cli":
         specifier: ^2.27.1
         version: 2.27.1
-    "@cloudflare/ai":
-        specifier: ^1.0.47
-        version: 1.0.47
     "@cloudflare/workers-types":
         specifier: ^4.20240117.0
         version: 4.20240117.0
@@ -484,13 +481,6 @@ packages:
             fs-extra: 7.0.1
             human-id: 1.0.2
             prettier: 2.8.8
-        dev: true
-
-    /@cloudflare/ai@1.0.47:
-        resolution:
-            {
-                integrity: sha512-HRCIrSPrC3mXtIhbWQsSZAQxKHeiQxsjLPy0LHPrkZMzIFevJREINSNEhEccU/kDREkyPlzU5vV4++Yldbqqsg==,
-            }
         dev: true
 
     /@cloudflare/kv-asset-handler@0.2.0:

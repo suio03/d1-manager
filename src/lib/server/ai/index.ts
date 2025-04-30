@@ -51,8 +51,7 @@ export async function select_backend(): Promise<AiBackend> {
 	if (env.AI) {
 		log("using Cloudflare backend");
 		return Aid.chat(async (messages) => {
-			const { Ai } = await import("$lib/../../cfai/cfai");
-			const ai = new Ai(env.AI);
+			const ai = env.AI as any;
 			const { response } = await ai.run(CFAI_MODEL, {
 				messages,
 			});
