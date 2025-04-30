@@ -8,7 +8,7 @@ debug.enable("aid*");
 const log = debug("assistant");
 log.enabled = true;
 
-const OPENAI_MODEL = env.OPENAI_MODEL || "gpt-3.5-turbo-1106";
+const OPENAI_MODEL = env.OPENAI_MODEL || "gpt-4.1-mini";
 const CFAI_MODEL = env.CFAI_MODEL || "@cf/mistral/mistral-7b-instruct-v0.1";
 
 /**
