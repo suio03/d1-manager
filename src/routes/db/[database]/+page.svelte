@@ -82,7 +82,7 @@
 					bind:value={query}
 					on:keypress={handler}
 					disabled={running}
-				/>
+				></textarea>
 				{#if query}
 					<button
 						class="btn-primary btn h-auto min-w-[6rem] join-item"
@@ -120,7 +120,7 @@
 						</div>
 					</div>
 
-					<div class="divider" />
+					<div class="divider"></div>
 
 					<div>
 						<div class="overflow-x-auto">

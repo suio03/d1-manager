@@ -66,7 +66,7 @@
 			{$t("d1-manager.description")}
 		</p>
 
-		<div class="divider" />
+		<div class="divider"></div>
 
 		<div class="form-control w-full max-w-xs">
 			<label class="label" for="theme-select">

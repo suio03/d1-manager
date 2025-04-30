@@ -76,7 +76,7 @@
 				</div>
 			</div>
 
-			<div class="divider" />
+			<div class="divider"></div>
 
 			<select
 				class="select-bordered select max-w-xs"

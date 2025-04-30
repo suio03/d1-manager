@@ -227,7 +227,7 @@
 								{/if}
 							</th>
 						{/each}
-						<th />
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>

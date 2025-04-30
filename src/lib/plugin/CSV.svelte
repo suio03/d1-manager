@@ -180,7 +180,7 @@
 <div class="w-full rounded-lg border p-4">
 	<p class="card-title">{$t("plugin.csv.import-csv")}</p>
 
-	<div class="divider" />
+	<div class="divider"></div>
 
 	<div class="form-control w-full">
 		<label class="label" for="csv">
@@ -242,7 +242,7 @@
 <div class="w-full rounded-lg border p-4">
 	<p class="card-title">{$t("plugin.csv.export-csv")}</p>
 
-	<div class="divider" />
+	<div class="divider"></div>
 
 	<button class="btn-primary btn w-full" on:click={export_csv} disabled={running}>
 		{$t("plugin.csv.export")}

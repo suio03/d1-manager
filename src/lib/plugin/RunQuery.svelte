@@ -63,7 +63,7 @@
 		placeholder="SELECT COUNT(*) AS c FROM {table}"
 		bind:value={query}
 		on:keypress={handler}
-	/>
+	></textarea>
 </div>
 
 <button class="btn-primary btn" class:btn-error={danger} on:click={run} disabled={running}
@@ -71,7 +71,7 @@
 >
 
 {#if result}
-	<div class="divider" />
+	<div class="divider"></div>
 
 	{#if result?.results?.length}
 		<div class="max-h-[80vh] overflow-auto">
@@ -124,11 +124,11 @@
 {/if}
 
 {#if error}
-	<div class="divider" />
+	<div class="divider"></div>
 
 	<div class="alert alert-error shadow-lg">
 		<div>{error}</div>
 	</div>
 {/if}
 
-<div id="bottom" />
+<div id="bottom"></div>

@@ -59,7 +59,7 @@
 					</div>
 
 					{#if i !== data.db.length - 1}
-						<div class="divider my-0" />
+						<div class="divider my-0"></div>
 					{/if}
 				{/each}
 			</div>

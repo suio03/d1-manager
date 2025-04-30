@@ -115,7 +115,7 @@
 			bind:value={query}
 			on:keypress={suggest_handler}
 			disabled={running}
-		/>
+		></textarea>
 
 		<button
 			class="btn-primary btn-outline btn h-auto min-w-[6rem] join-item"
@@ -135,7 +135,7 @@
 			bind:value={suggestion}
 			on:keypress={run_handler}
 			disabled={running}
-		/>
+		></textarea>
 
 		<button
 			class="btn-primary btn h-auto min-w-[6rem] join-item"
@@ -149,7 +149,7 @@
 </div>
 
 {#if result}
-	<div class="divider" />
+	<div class="divider"></div>
 
 	{#if result.results?.length}
 		<div class="max-h-[80vh] overflow-auto">
@@ -202,11 +202,11 @@
 {/if}
 
 {#if error}
-	<div class="divider" />
+	<div class="divider"></div>
 
 	<div class="alert alert-error shadow-lg">
 		<div>{error}</div>
 	</div>
 {/if}
 
-<div id="bottom" />
+<div id="bottom"></div>
