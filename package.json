@@ -24,7 +24,6 @@
 		"@ai-d/aid": "^0.1.5",
 		"@changesets/changelog-github": "^0.5.0",
 		"@changesets/cli": "^2.27.1",
-		"@cloudflare/ai": "^1.0.47",
 		"@cloudflare/workers-types": "^4.20240117.0",
 		"@iconify/svelte": "^3.1.6",
 		"@playwright/test": "^1.41.1",
