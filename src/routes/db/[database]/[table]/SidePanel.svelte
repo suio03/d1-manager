@@ -36,11 +36,11 @@
 
 {#if show}
 	<div
-		class="fixed right-0 top-0 z-20 h-full w-80 max-w-[4/5] p-2 opacity-90"
+		class="fixed! top-0 right-0 z-20 h-full w-80 max-w-[80%] p-2 opacity-90"
 		transition:fly={{ x: 100, duration: 100 }}
 	>
 		<div
-			class="h-full overflow-auto rounded-lg bg-base-100 shadow-lg ring-1 ring-base-content/50"
+			class="bg-base-100 ring-base-content/50 h-full overflow-auto rounded-lg shadow-lg ring-1"
 		>
 			<div class="w-full p-4">
 				{#each data.db as table, i}
@@ -59,7 +59,7 @@
 					</div>
 
 					{#if i !== data.db.length - 1}
-						<div class="divider my-0" />
+						<div class="divider my-0"></div>
 					{/if}
 				{/each}
 			</div>

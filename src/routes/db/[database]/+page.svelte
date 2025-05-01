@@ -70,11 +70,11 @@
 </svelte:head>
 
 <div class="flex w-full flex-col items-center justify-start gap-4 p-4">
-	<div class="card-bordered card w-full">
+	<div class="card-border card w-full">
 		<div class="card-body">
 			<div class="join">
 				<textarea
-					class="textarea-bordered textarea h-10 flex-1 resize-y !rounded-l-lg font-mono transition-colors focus:textarea-primary join-item"
+					class="textarea-border textarea focus:textarea-primary join-item h-10 w-full flex-1 resize-y !rounded-l-lg font-mono transition-colors"
 					class:!outline-error={danger}
 					placeholder={$t("execute-sql-query-in-database", {
 						values: { db: $page.params.database },
@@ -82,10 +82,10 @@
 					bind:value={query}
 					on:keypress={handler}
 					disabled={running}
-				/>
+				></textarea>
 				{#if query}
 					<button
-						class="btn-primary btn h-auto min-w-[6rem] join-item"
+						class="btn-primary btn join-item h-auto min-w-[6rem]"
 						class:btn-error={danger}
 						on:click={run}
 						disabled={running}
@@ -96,7 +96,7 @@
 			</div>
 
 			{#if error}
-				<div class="mt-2 text-error">{error}</div>
+				<div class="text-error mt-2">{error}</div>
 			{:else if duration}
 				<div class="mt-2 text-sm">
 					{$t("n-ms", { values: { n: duration.toFixed(2) } })}
@@ -108,7 +108,7 @@
 	{#each data.db as table}
 		<a class="w-full" href="/db/{$page.params.database}/{table.name}">
 			<div
-				class="card-bordered card w-full transition-all hover:border-primary hover:shadow-md"
+				class="card-border card hover:border-primary w-full transition-all hover:shadow-md"
 			>
 				<div class="card-body">
 					<h2 class="card-title">{table.name}</h2>
@@ -120,11 +120,11 @@
 						</div>
 					</div>
 
-					<div class="divider" />
+					<div class="divider"></div>
 
 					<div>
 						<div class="overflow-x-auto">
-							<table class="table-sm table w-full bg-base-200">
+							<table class="table-sm bg-base-200 table w-full">
 								<thead>
 									<tr>
 										<th>{$t("col-name")}</th>

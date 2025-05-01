@@ -180,16 +180,16 @@
 <div class="w-full rounded-lg border p-4">
 	<p class="card-title">{$t("plugin.csv.import-csv")}</p>
 
-	<div class="divider" />
+	<div class="divider"></div>
 
-	<div class="form-control w-full">
+	<div class="w-full">
 		<label class="label" for="csv">
 			<span class="label-text">{$t("plugin.csv.select-a-csv-file")}</span>
 		</label>
 		<input
 			id="csv"
 			type="file"
-			class="file-input-bordered file-input w-full"
+			class="file-input-border file-input w-full"
 			bind:files
 			accept=".csv"
 			on:change={read}
@@ -205,7 +205,7 @@
 		<div class="my-2 max-h-[70vh] overflow-auto">
 			<table class="table-sm table w-full">
 				<thead>
-					<tr class="sticky top-0 z-10 bg-base-200 shadow">
+					<tr class="bg-base-200 sticky top-0 z-10 shadow">
 						{#each keys as key}
 							<th class="!relative normal-case">{key}</th>
 						{/each}
@@ -242,7 +242,7 @@
 <div class="w-full rounded-lg border p-4">
 	<p class="card-title">{$t("plugin.csv.export-csv")}</p>
 
-	<div class="divider" />
+	<div class="divider"></div>
 
 	<button class="btn-primary btn w-full" on:click={export_csv} disabled={running}>
 		{$t("plugin.csv.export")}

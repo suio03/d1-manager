@@ -166,9 +166,9 @@
 				<td class="w-40">{col.name}</td>
 				<td>
 					{#if input_type(col.type) !== "file"}
-						<div class="form-control w-full">
+						<div class="w-full">
 							<input
-								class="input-bordered input input-sm w-full transition-colors"
+								class="input-border input input-sm w-full transition-colors"
 								class:input-error={record[col.name].err}
 								type={input_type(col.type)}
 								on:input={(e) => {
