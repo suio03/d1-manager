@@ -51,6 +51,7 @@ export async function select_backend(): Promise<AiBackend> {
 	if (env.AI) {
 		log("using Cloudflare backend");
 		return Aid.chat(async (messages) => {
+			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 			const ai = env.AI as any;
 			const { response } = await ai.run(CFAI_MODEL, {
 				messages,

@@ -79,6 +79,9 @@ importers:
             lint-staged:
                 specifier: ^15.5.1
                 version: 15.5.1
+            node-sql-parser:
+                specifier: ^5.3.8
+                version: 5.3.8
             openai:
                 specifier: ^4.96.2
                 version: 4.96.2(ws@8.18.0)(zod@3.24.3)
@@ -1852,6 +1855,12 @@ packages:
                 integrity: sha512-lX7HFZeHf4QG/J7tBZqrCAXwz9J5RD56Y6MpP0eJkka8p+K0RY/yBTW7CYFJ4VGCclxqOLKmiGP5juQc6MKgcw==,
             }
 
+    "@types/pegjs@0.10.6":
+        resolution:
+            {
+                integrity: sha512-eLYXDbZWXh2uxf+w8sXS8d6KSoXTswfps6fvCUuVAGN8eRpfe7h9eSRydxiSJvo9Bf+GzifsDOr9TMQlmJdmkw==,
+            }
+
     "@types/sql.js@1.4.9":
         resolution:
             {
@@ -2142,6 +2151,13 @@ packages:
                 integrity: sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g==,
             }
         engines: { node: ">=4" }
+
+    big-integer@1.6.52:
+        resolution:
+            {
+                integrity: sha512-QxD8cf2eVqJOOz63z6JIN9BzvVs/dlySa5HGSBH5xtR8dPteIRQnBxxKqkNTiT6jbDTF6jAfrd4oMcND9RGbQg==,
+            }
+        engines: { node: ">=0.6" }
 
     blake3-wasm@2.1.5:
         resolution:
@@ -3744,6 +3760,13 @@ packages:
         peerDependenciesMeta:
             encoding:
                 optional: true
+
+    node-sql-parser@5.3.8:
+        resolution:
+            {
+                integrity: sha512-aqGTzK8kPJAwQ6tqdS0l+vX358LXMmZDw902ePfiPn3PSDsg2HeR2tHFioXNHJW00YHoic6VVYY80waFb/zdxw==,
+            }
+        engines: { node: ">=8" }
 
     npm-run-path@5.3.0:
         resolution:
@@ -5940,6 +5963,8 @@ snapshots:
         dependencies:
             undici-types: 6.21.0
 
+    "@types/pegjs@0.10.6": {}
+
     "@types/sql.js@1.4.9":
         dependencies:
             "@types/emscripten": 1.40.1
@@ -6130,6 +6155,8 @@ snapshots:
     better-path-resolve@1.0.0:
         dependencies:
             is-windows: 1.0.2
+
+    big-integer@1.6.52: {}
 
     blake3-wasm@2.1.5: {}
 
@@ -7072,6 +7099,11 @@ snapshots:
     node-fetch@2.7.0:
         dependencies:
             whatwg-url: 5.0.0
+
+    node-sql-parser@5.3.8:
+        dependencies:
+            "@types/pegjs": 0.10.6
+            big-integer: 1.6.52
 
     npm-run-path@5.3.0:
         dependencies:
