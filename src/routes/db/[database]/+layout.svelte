@@ -44,7 +44,7 @@
 </script>
 
 <div class="flex h-full w-full flex-col">
-	<div class="navbar min-h-12 border-b border-base-300">
+	<div class="navbar border-base-300 min-h-12 border-b">
 		<div class="flex-1">
 			<a class="px-4 font-bold" href="/db/{$page.params.database}">
 				{$t("n-table-in-db", {

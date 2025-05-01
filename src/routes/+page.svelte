@@ -68,7 +68,7 @@
 
 		<div class="divider"></div>
 
-		<div class="form-control w-full max-w-xs">
+		<div class="w-full max-w-xs">
 			<label class="label" for="theme-select">
 				<span class="label-text">{$t("theme")}</span>
 			</label>
@@ -79,7 +79,7 @@
 			</select>
 		</div>
 
-		<div class="form-control w-full max-w-xs">
+		<div class="w-full max-w-xs">
 			<label class="label" for="language-select">
 				<span class="label-text">{$t("language")}</span>
 			</label>

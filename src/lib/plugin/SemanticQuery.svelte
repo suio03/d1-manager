@@ -107,10 +107,10 @@
 	{$t("plugin.semantic-query.autorun-on-read-only-queries")}
 </p>
 
-<div class="form-control w-full">
-	<div class="join">
+<div class="w-full">
+	<div class="join w-full">
 		<textarea
-			class="textarea-bordered textarea h-12 flex-1 resize-y font-sans join-item"
+			class="textarea-border textarea join-item h-12 flex-1 resize-y font-sans"
 			placeholder={$t("show-first-10-records")}
 			bind:value={query}
 			on:keypress={suggest_handler}
@@ -118,7 +118,7 @@
 		></textarea>
 
 		<button
-			class="btn-primary btn-outline btn h-auto min-w-[6rem] join-item"
+			class="btn-primary btn-outline btn join-item h-auto min-w-[6rem]"
 			on:click={suggest}
 			disabled={running}
 		>
@@ -127,10 +127,10 @@
 	</div>
 </div>
 
-<div class="form-control w-full">
-	<div class="join">
+<div class="w-full">
+	<div class="join w-full">
 		<textarea
-			class="textarea-bordered textarea h-16 flex-1 resize-y font-mono join-item"
+			class="textarea-border textarea join-item h-16 flex-1 resize-y font-mono"
 			placeholder={$t("suggestion-will-appear-here")}
 			bind:value={suggestion}
 			on:keypress={run_handler}
@@ -138,7 +138,7 @@
 		></textarea>
 
 		<button
-			class="btn-primary btn h-auto min-w-[6rem] join-item"
+			class="btn-primary btn join-item h-auto min-w-[6rem]"
 			class:btn-error={danger}
 			on:click={run}
 			disabled={running}
@@ -155,7 +155,7 @@
 		<div class="max-h-[80vh] overflow-auto">
 			<table class="table-sm table w-full">
 				<thead>
-					<tr class="sticky top-0 z-10 bg-base-200 shadow">
+					<tr class="bg-base-200 sticky top-0 z-10 shadow">
 						{#each Object.keys(result.results[0]) as key}
 							<th class="!relative normal-case">{key}</th>
 						{/each}

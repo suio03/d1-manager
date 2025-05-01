@@ -193,7 +193,7 @@
 	}
 </script>
 
-<div class="pb-2 pt-4">
+<div class="pt-4 pb-2">
 	<label class="swap">
 		<input type="checkbox" bind:checked={locked} />
 		<div class="swap-on flex items-center gap-2">
@@ -212,7 +212,7 @@
 		<div class="max-h-[80vh] overflow-auto transition-opacity" class:opacity-50={running}>
 			<table class="table-sm table min-w-full">
 				<thead>
-					<tr class="sticky top-0 z-10 bg-base-200 shadow">
+					<tr class="bg-base-200 sticky top-0 z-10 shadow">
 						{#each cols as col}
 							<th
 								class="!relative cursor-pointer normal-case"
@@ -238,7 +238,7 @@
 									<td>
 										{#if typeof row[key] === "number"}
 											<input
-												class="input-ghost input input-xs text-base transition-all hover:input-bordered disabled:bg-transparent"
+												class="input-ghost input input-xs hover:input-border text-base transition-all disabled:bg-transparent"
 												type="number"
 												bind:value={row[key]}
 												on:blur={() => edit(row._, key)}
@@ -249,7 +249,7 @@
 											/>
 										{:else}
 											<input
-												class="input-ghost input input-xs text-base transition-all hover:input-bordered disabled:bg-transparent"
+												class="input-ghost input input-xs hover:input-border text-base transition-all disabled:bg-transparent"
 												bind:value={row[key]}
 												on:change={() => edit(row._, key)}
 												disabled={locked || running}

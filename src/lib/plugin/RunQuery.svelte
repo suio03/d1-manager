@@ -57,9 +57,9 @@
 	}
 </script>
 
-<div class="form-control w-full">
+<div class="w-full">
 	<textarea
-		class="textarea-bordered textarea h-24 resize-y font-mono"
+		class="textarea-border textarea h-24 w-full resize-y font-mono"
 		placeholder="SELECT COUNT(*) AS c FROM {table}"
 		bind:value={query}
 		on:keypress={handler}
@@ -77,7 +77,7 @@
 		<div class="max-h-[80vh] overflow-auto">
 			<table class="table-sm table w-full">
 				<thead>
-					<tr class="sticky top-0 z-10 bg-base-200 shadow">
+					<tr class="bg-base-200 sticky top-0 z-10 shadow">
 						{#each Object.keys(result.results[0]) as key}
 							<th class="!relative normal-case">{key}</th>
 						{/each}

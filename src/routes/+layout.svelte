@@ -46,7 +46,7 @@
 </script>
 
 <div class="flex h-full w-full flex-col">
-	<div class="navbar min-h-12 bg-base-200">
+	<div class="navbar bg-base-200 min-h-12">
 		<div class="flex-1">
 			<a
 				class="btn-ghost btn-sm btn text-xl normal-case"
@@ -56,7 +56,7 @@
 		</div>
 		<div class="flex-none">
 			<select
-				class="select-bordered select select-sm w-full max-w-xs"
+				class="select-border select select-sm w-full max-w-xs"
 				bind:value={database}
 				on:click={preload}
 			>
